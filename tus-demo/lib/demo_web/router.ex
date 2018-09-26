@@ -9,9 +9,9 @@ defmodule DemoWeb.Router do
     plug(:put_secure_browser_headers)
   end
 
-  pipeline :api do
-    plug(:accepts, ["json"])
-  end
+  # pipeline :api do
+  #  plug(:accepts, ["json"])
+  # end
 
   scope "/", DemoWeb do
     # Use the default browser stack

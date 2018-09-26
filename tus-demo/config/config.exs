@@ -29,11 +29,12 @@ config :tus, DemoWeb.UploadController,
 
   cache: Tus.Cache.Memory,
   max_size: 1024 * 1024 * 20
-  #cache: Tus.Cache.Redis,
-  #redis_host: "localhost",
-  #redis_port: 6379,
-  # max supported file size, in bytes (default 20 MB)
-  #max_size: 1024 * 1024 * 20
+
+# cache: Tus.Cache.Redis,
+# redis_host: "localhost",
+# redis_port: 6379,
+# max supported file size, in bytes (default 20 MB)
+# max_size: 1024 * 1024 * 20
 
 # List here all of your upload controllers
 config :tus, controllers: [DemoWeb.UploadController]

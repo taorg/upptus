@@ -32,14 +32,16 @@ defmodule Demo.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.3"},
+      {:phoenix, "~> 1.3.4"},
       {:phoenix_pubsub, "~> 1.0"},
       {:phoenix_html, "~> 2.1"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:tus, path: "../tus",override: true},
-      #{:tus, "~> 0.1.3"},
+      {:plug, "~> 1.6", override: true},
+      {:tus, path: "../tus", override: true},
+      {:phx_raws, path: "../phx_raws", override: true},
+      # {:tus, "~> 0.1.3"},
       {:ex_aws_s3, "~> 2.0.1"},
       {:tus_storage_s3, "~> 0.1.0"},
       {:tus_cache_redis, "~> 0.1.0"}

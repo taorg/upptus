@@ -4,16 +4,17 @@ defmodule DemoWeb.UploadController do
 
   # start upload optional callback
   def on_begin_upload(file) do
-    IO.puts "on_begin_upload"
-    IO.inspect file
-    IO.puts "------"
-    :ok  # or {:error, reason} to reject the uplaod
+    IO.puts("on_begin_upload")
+    IO.inspect(file)
+    IO.puts("------")
+    # or {:error, reason} to reject the uplaod
+    :ok
   end
 
   # Completed upload optional callback
   def on_complete_upload(file) do
-    IO.puts "on_complete_upload"
-    IO.inspect file
-    IO.puts "------"
+    IO.puts("on_complete_upload")
+    IO.inspect(file)
+    IO.puts("------")
   end
 end

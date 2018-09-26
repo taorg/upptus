@@ -25,4 +25,5 @@ tus-*.tar
 env
 tus.tab
 priv/static/files/
+.elixir_ls/
 
